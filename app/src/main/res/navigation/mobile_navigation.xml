@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="nunofernandes.example.socialsnap.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_photoDetailFragment"
+            app:destination="@id/photoDetailFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_navigation_home_to_detailSnap"
+            app:destination="@id/detailSnap" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="nunofernandes.example.socialsnap.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_detailSnap"
+            app:destination="@id/detailSnap" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_detailSnap2"
+            app:destination="@id/detailSnap" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="nunofernandes.example.socialsnap.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="nunofernandes.example.socialsnap.PhotoDetailFragment"
+        android:label="activity_photo_detail"
+        tools:layout="@layout/activity_photo_detail" >
+        <argument
+            android:name="snapID"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailSnap"
+        android:name="nunofernandes.example.socialsnap.DetailSnap"
+        android:label="DetailSnap" >
+    </fragment>
+    <activity
+        android:id="@+id/login"
+        android:name="nunofernandes.example.socialsnap.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>

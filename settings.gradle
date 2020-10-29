@@ -1,0 +1,2 @@
+rootProject.name='SocialSnap'
+include ':app'

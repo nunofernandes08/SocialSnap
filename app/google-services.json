@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "122503538867",
+    "firebase_url": "https://socialsnap-f9028.firebaseio.com",
+    "project_id": "socialsnap-f9028",
+    "storage_bucket": "socialsnap-f9028.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122503538867:android:853b9fa6fa0a846492e8c6",
+        "android_client_info": {
+          "package_name": "nunofernandes.example.socialsnap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122503538867-okdq29g8srpmmg0eolih0m1ct2bb5fvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqtiTw0SgtG6KmTqV_SdClhCRO3cVG-Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122503538867-okdq29g8srpmmg0eolih0m1ct2bb5fvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
